@@ -1,0 +1,16 @@
+/***** BASE STYLE *****/
+
+
+/** GRID **/
+
+.full-width {
+  width: 1200px;
+}
+
+.half-width {
+  width: 600px;
+}
+
+.third-width: {
+  width: 400px;
+}

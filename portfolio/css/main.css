@@ -4,13 +4,33 @@
 /** GRID **/
 
 .full-width {
-  width: 1200px;
+    width: 1200px;
 }
 
 .half-width {
-  width: 600px;
+    width: 600px;
 }
 
 .third-width: {
-  width: 400px;
+    width: 400px;
 }
+
+/***** HEADER *****/
+
+header {
+    background-image: url("../img/header-pic.png");
+}
+
+/***** PORTFOLIO *****/
+
+
+/***** ABOUT *****/
+
+img #about {
+  border: 12px solid #ffffff;
+}
+
+/***** CONTACT *****/
+
+
+/***** FOOTER *****/

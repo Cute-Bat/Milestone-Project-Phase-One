@@ -18,8 +18,10 @@
 /***** HEADER *****/
 
 header {
-    background-image: url("../img/header-pic.png");
-}
+    height: 800px;
+    background: url('../img/full-background.png');
+    background-size: cover;
+  }
 
 /***** PORTFOLIO *****/
 

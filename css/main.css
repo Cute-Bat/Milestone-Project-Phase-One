@@ -1,38 +1,234 @@
 /***** BASE STYLE *****/
 
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Raleway';
+}
+
+/* megrim-regular - latin */
+@font-face {
+  font-family: 'Megrim';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/megrim-v8-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Megrim'),
+       url('../fonts/megrim-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/megrim-v8-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/megrim-v8-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/megrim-v8-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/megrim-v8-latin-regular.svg#Megrim') format('svg'); /* Legacy iOS */
+}
+
+/* raleway-regular - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Raleway'), local('Raleway-Regular'),
+       url('../fonts/raleway-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v12-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+.subheadings {
+  clear: both;
+  color: red;
+  font-family: 'Megrim';
+  font-size: 35px;
+  padding: 0 0 0 10px;
+  text-align: center;
+}
 
 /** GRID **/
 
 .full-width {
-    width: 1200px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .half-width {
-    width: 600px;
+  float: left;
+  margin: 0 auto;
+  width: 600px;
+  padding-bottom: 25px;
 }
 
-.third-width: {
-    width: 400px;
+.third-width {
+  float:left;
+  margin: 0 auto;
+  width: 390px;
 }
+
+/***** end: BASIC STYLE *****/
 
 /***** HEADER *****/
 
 header {
-    height: 800px;
-    background: url('../img/full-background.png');
-    background-size: cover;
+  height: 960px;
+  background: url("../img/header-pic.png");
+  background-size: cover;
   }
+
+header div .half-width {
+  margin: 45px 0;
+}
+
+header h1 {
+  clear: both;
+  font-family: 'Megrim';
+  font-size: 20px;
+}
+
+header h1 span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+header h3 {
+  float: left;
+  font-weight: bolder;
+  padding: 25px;
+}
+
+nav {
+   padding: 36px 0;
+}
+
+nav ul li {
+   display: inline;
+   padding: 0 10px;
+}
+
+nav ul li a {
+  color: black;
+   font-size: 16px;
+   font-weight: bold;
+   font-variant: small-caps;
+   padding-left: 100px;
+   text-decoration: none;
+}
 
 /***** PORTFOLIO *****/
 
+#balance {
+  padding-top: 70px;
+}
+
+.border-thumbnail {
+  border: solid white 10px;
+}
+
+.column-one {
+   float: left;
+   margin-right: 50px;
+   padding-top: 95px;
+   text-align: center;
+   width: 500px;
+}
+
+.column-two {
+   float: left;
+   margin-left: 50px;
+   text-align: center;
+   width: 500px;
+}
+
+#portfolio {
+  color: black;
+  height: 1200px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.portfolio-p {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
 
 /***** ABOUT *****/
 
-img #about {
-  border: 12px solid #ffffff;
+#about {
+   clear: both;
+   height: 300px;
+}
+
+.about {
+  font-size: 25px;
+  text-align: center;
+}
+
+#heading {
+  font-weight: bold;
+}
+
+#me {
+   border: 5px solid #ffffff;
+   margin: 20px;
+   position: relative;
+   left: 250px;
+}
+
+.portfolio-p,  .contact-p {
+   font-size: 30px;
+   line-height: 29px;
+   padding-left: 45px;
+   padding-right: 45px;
 }
 
 /***** CONTACT *****/
 
+#centre {
+  position: relative;
+  left: 12px;
+}
+
+#contact {
+    color: black;
+    height: 600px;
+    text-align: center;
+}
+
+#contact-padding {
+    padding: 30px;
+}
+
+.social-media {
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+    left: -7px;
+}
 
 /***** FOOTER *****/
+
+footer h4 {
+    text-align: center;
+    clear: both;
+    padding: 15px;
+}
+
+/***** back-to-top button *****/
+
+#myBtn {
+     background-color: red; /* Set a background color */
+     border: none; /* Remove borders */
+     border-radius: 10px; /* Rounded corners */
+     bottom: 20px;ss /* Place the button at the bottom of the page */
+     color: white; /* Text color */
+     cursor: pointer; /* Add a mouse pointer on hover */
+     display: none; /* Hidden by default */
+     font-size: 18px; /* Increase font size */
+     outline: none; /* Remove outline */
+     padding: 15px; /* Some padding */
+     position: fixed; /* Fixed/sticky position */
+     right: 30px; /* Place the button 30px from the right */
+     z-index: 99; /* Make sure it does not overlap */
+}
+
+#myBtn:hover {
+     background-color: black; /* Add a black background on hover */
+}

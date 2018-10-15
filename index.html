@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
 
-<html>
     <head>
         <meta charset="utf-8">
-        <title>Julia codes</title>
+        <title>the Cute Bat's code</title>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main">
+        <link rel="stylesheet" href="css/main.css">
+<!-- JS for a back-to-top-button -->
+        <script src="back-to-top-button.js"></script>
     </head>
 
     <body>
@@ -17,17 +18,16 @@
             <h3> &lt; Cute Bat | developer / &gt; </h3>
           </div>
 <!-- Navigation bar -->
-          <div class="half-width">
+          <nav class="half-width">
             <ul>
               <li><a href="#portfolio">portfolio</a></li>
               <li><a href="#about">about</a></li>
               <li><a href="#contact">contact</a></li>
             </ul>
-          </div>
-<!-- Header pic & main heading -->
+          </nav>
+<!-- Main heading -->
           <div class="full-width">
-            <img src>
-            <h1>the <span>Cute Bat</span> who codes</h1>
+            <h1>the <span>Cute Bat's</span> code</h1>
           </div>
         </div>
       </header>
@@ -35,86 +35,84 @@
       <main>
         <div id="portfolio">
           <div class="full-width">
-<!-- Subheading -->
+
             <div class="full-width">
-              <h2>my portfolio</h2>
+              <h2 class="subheadings">my portfolio</h2>
             </div>
-<!-- First work sample -->
+<!-- Work samples -->
             <div class="full-width">
-              <!-- Picture -->
-              <div class="half-width">
-                <img src="img/thumbnail-one.png" alt="my-first-portfolio-website">
+              <!-- left column -->
+              <div class="column-one">
+                <img class="border-thumbnail" src="img/juliacodes_thumbnail.jpg" alt="my-first-portfolio-website">
+                <p class="portfolio-p">coding exercise<br>for my Skillcrush lessons<br>in HTML, CSS, Java Script</p>
+                <img class="border-thumbnail" src="img/holstee_thumbnail.jpg" alt="my Holstee manifesto">
+                <p class="portfolio-p">coding exercise<br>for my Skillcrush lessons<br>in HTML and CSS</p>
               </div>
-              <!-- Text -->
-              <div class="half-width">
-                <p> meow wuff </p>
-              </div>
-            </div>
-<!-- Second work sample -->
-            <div class="full-width">
-              <!-- Text -->
-              <div class="half-width">
-                <p> meow wuff </p>
-              </div>
-              <!-- Picture -->
-              <div class="half-width">
-                <img src="img/thumnail-two.png" alt="Jubilee Austen exercise">
-              </div>
-            </div>
-<!-- Third work sample -->
-            <div class="full-width">
-              <!-- Picture -->
-              <div class="half-width">
-                <img src="img/thumbnail-three.png" alt="my Holstee manifesto">
-              </div>
-              <!-- Text -->
-              <div class="half-width">
-                <p> wuff meow </p>
+              <!-- right column -->
+              <div class="column-two">
+                <p class="portfolio-p">my first own website:<br>coding exercise<br>in HTML, CSS, Java Script</p>
+                <img class="border-thumbnail" src="img/jubilesausten_thumbnail.jpg" alt="Jubilee Austen exercise">
+                <p class="portfolio-p"><br>my Holstee manifesto<br>coding exercise<br>for my Skillcrush lessons<br>in HTML and CSS</p>
+                <img id="balance" class="border-thumbnail" src="img/roguepickings_thumbnail.jpg" alt="Rogue Pickings exercise">
               </div>
             </div>
           </div>
         </div>
 
-        <div id="about">
-          <div class="full-width">
-            <!-- Heading for about -->
-            <div class="full-width">
-              <h2> about me </h2>
-            </div>
-            <!-- Text -->
-            <div class="half-width">
-              <p> wuff wuff wuff </p>
-            </div>
-            <!-- Picture -->
-            <div class="half-width">
-              <img id="about" src="img/about-pic.png" alt="cute-bat"/>
-            </div>
+        <div  id="about" class="full-width">
+<!-- Heading for about -->
+            <h2 class="subheadings">about me</h2>
+<!-- Text -->
+          <div class="half-width">
+            <p id="heading" class="about">trade teaching for coding</p>
+            <p class="about">I am a young vocational school teacher who has fallen in love with coding.<br>
+               Now I want to change my carreer and work in tech.<br>
+               During the studies for my Bachelor degree in English/American Studies and East Slavonic Studies<br>
+               I got my first taste of coding.<br>
+               Currently I am doing the Break Into Tech Blueprint at Skillcrush which helps learning all the skills I need.</p>
+            <p class="about">Do you like what you red?<br>
+               Please, contact me.</p>
+          </div>
+<!-- Picture -->
+          <div class="half-width">
+            <img id="me" src="img/about-pic.png" alt="cute-bat"/>
           </div>
         </div>
 
         <div id="contact">
-          <div class="full-width">
-            <!-- Heading for contact -->
-            <div class="full-width">
-              <h2>how to contact me</h2>
-            </div>
-            <!-- E-mail address -->
-            <div class="third-width">
-              <p>wuff</p>
-              <a href="mailto:cute.bat29@gmail.com">cute.bat29@gmail.com</a>
-            </div>
-            <!-- social media -->
-            <div class="third-width">
-              <p>wuff</p>
-              <ul>
-                <li> <a href="https://github.com/Cute-Bat" target="_BLANK"><img src="img/github-icon.png" alt="github-link"/></a></li>
-                <li> <a href="https://www.linkedin.com/in/julia-siegler-11ba1615a/" target="_BLANK"><img src="img/linkedin-icon.png" alt="linkedin-link"/></a></li>
-              </ul>
-            </div>
-            <!-- Homebase -->
-            <div class="third-width">
-              <p>wuff </p>
-              <p>bla bla <br> bla bla</p>
+          <div id="contact-padding" class="full-width">
+<!-- Heading for contact -->
+            <section>
+              <h2 class="subheadings">how to contact me</h2>
+            </section>
+<!-- E-mail address -->
+            <div>
+              <section class="third-width">
+                <h4>write me an e-mail</h4>
+                <a href="mailto:cute.bat29@gmail.com">
+                  <img src="img/email-icon.png" alt="my email">
+                </a>
+              </section>
+<!-- social media -->
+              <section class="third-width">
+                <h4 id="centre">OR find me on the web</h4>
+                <ul>
+                  <li class="social-media"> <a href="https://github.com/Cute-Bat" target="_BLANK">
+                    <img src="img/github-icon.png" alt="github-link"/></a>
+                  </li>
+                  <li class="social-media"> <a href="https://www.linkedin.com/in/julia-siegler-11ba1615a/" target="_BLANK">
+                    <img src="img/linkedin-icon.png" alt="linkedin-link"/></a>
+                  </li>
+                  <li class="social-media"> <a href="https://address.net" target="_BLANK">
+                    <img src="img/twitter-icon.png" alt="twitter-link"/></a>
+                  </li>
+                </ul>
+              </section>
+ <!-- Homebase -->
+              <section class="third-width">
+                <h4>my homebase</h4>
+                <p>Erfurt (Thuringia) GERMANY</p>
+              </section>
             </div>
           </div>
         </div>
@@ -125,5 +123,8 @@
           <h4>Copyright 2018 | Cute Bat</h4>
         </div>
       </footer>
+      <div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
     </body>
 </html>
